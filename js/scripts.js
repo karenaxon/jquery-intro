@@ -1,12 +1,22 @@
-jQuery("h1").click(function() {
-  alert("This is a heading.");
-  alert("I told you, THIS IS A HEADING!");
-});
 
-jQuery("p").click(function() {
-  alert("This is a paragraph.");
-});
+$(document).ready(function() {
+  $("button#green").click(function() {
+    $("body").removeClass();
+    $("body").addClass("green-background");
+  });
 
-// jQuery("img").click(function() {
-//   alert("This is an image.");
-// });
+  $("button#yellow").click(function() {
+    $("body").removeClass();
+    $("body").addClass("yellow-background");
+  });
+
+  $("button#red").click(function() {
+    $("body").removeClass();
+    $("body").addClass("red-background");
+  });
+
+  $("#para").click(function(){
+    $("#para").addClass("highlighted");
+  });
+
+}); 
